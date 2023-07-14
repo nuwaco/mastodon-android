@@ -82,5 +82,6 @@
 	<string name="error_saving_file">Error en enregistrant lo fichièr</string>
 	<string name="file_saved">Fichièr salvagardat</string>
 	<string name="downloading">Telecargament…</string>
-	<!-- translators: %,d is a valid placeholder, it formats the number with locale-dependent grouping separators -->
+    <string name="nuwasocial">nuwasocial</string>
+    <!-- translators: %,d is a valid placeholder, it formats the number with locale-dependent grouping separators -->
 </resources>

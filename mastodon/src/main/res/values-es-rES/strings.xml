@@ -333,4 +333,5 @@
 	</plurals>
 	<string name="timestamp_via_app">%1$s a través de %2$s</string>
 	<string name="time_now">ahora</string>
+    <string name="nuwasocial">nuwasocial</string>
 </resources>

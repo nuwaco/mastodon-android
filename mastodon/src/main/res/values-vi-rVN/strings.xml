@@ -314,4 +314,5 @@
 	</plurals>
 	<string name="timestamp_via_app">%1$s qua %2$s</string>
 	<string name="time_now">vừa xong</string>
+    <string name="nuwasocial">nuwasocial</string>
 </resources>

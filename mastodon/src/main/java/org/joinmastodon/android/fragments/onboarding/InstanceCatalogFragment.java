@@ -169,6 +169,7 @@ public class InstanceCatalogFragment extends BaseRecyclerFragment<CatalogInstanc
 						categories.add(all);
 						result.stream().sorted(Comparator.comparingInt((CatalogCategory cc)->cc.serversCount).reversed()).forEach(categories::add);
 						updateCategories();
+
 					}
 
 					@Override

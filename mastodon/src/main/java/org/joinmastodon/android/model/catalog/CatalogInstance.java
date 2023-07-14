@@ -1,5 +1,7 @@
 package org.joinmastodon.android.model.catalog;
 
+import androidx.annotation.NonNull;
+
 import org.joinmastodon.android.api.AllFieldsAreRequired;
 import org.joinmastodon.android.api.ObjectValidationException;
 import org.joinmastodon.android.model.BaseModel;
@@ -21,7 +23,6 @@ public class CatalogInstance extends BaseModel{
 	public boolean approvalRequired;
 	public String language;
 	public String category;
-
 	public transient String normalizedDomain;
 
 	@Override
@@ -33,6 +34,7 @@ public class CatalogInstance extends BaseModel{
 			normalizedDomain=domain;
 	}
 
+	@NonNull
 	@Override
 	public String toString(){
 		return "CatalogInstance{"+

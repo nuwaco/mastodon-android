@@ -332,4 +332,5 @@
 		<item quantity="other">%,d yeniden paylaşım</item>
 	</plurals>
 	<string name="timestamp_via_app">%1$s tarihinde %2$s uygulamasıyla</string>
+    <string name="nuwasocial">nuwasocial</string>
 </resources>
