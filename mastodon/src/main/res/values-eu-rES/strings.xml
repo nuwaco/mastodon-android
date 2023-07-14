@@ -257,5 +257,6 @@
 	<string name="error_saving_file">Errorea fitxategia gordetzerakoan</string>
 	<string name="file_saved">Fitxategia gorde da</string>
 	<string name="downloading">Jeisten…</string>
-	<!-- translators: %,d is a valid placeholder, it formats the number with locale-dependent grouping separators -->
+    <string name="nuwasocial">nuwasocial</string>
+    <!-- translators: %,d is a valid placeholder, it formats the number with locale-dependent grouping separators -->
 </resources>

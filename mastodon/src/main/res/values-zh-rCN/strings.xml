@@ -314,4 +314,5 @@
 	</plurals>
 	<string name="timestamp_via_app">%1$s 来自 %2$s</string>
 	<string name="time_now">刚刚</string>
+    <string name="nuwasocial">nuwasocial</string>
 </resources>

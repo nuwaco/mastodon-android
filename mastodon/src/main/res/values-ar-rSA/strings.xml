@@ -409,4 +409,5 @@
 	</plurals>
 	<string name="timestamp_via_app">%1$s عبر %2$s</string>
 	<string name="time_now">الآن</string>
+    <string name="nuwasocial">nuwasocial</string>
 </resources>

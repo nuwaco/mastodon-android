@@ -16,6 +16,7 @@ import org.joinmastodon.android.R;
 import org.joinmastodon.android.api.MastodonErrorResponse;
 import org.joinmastodon.android.api.requests.instance.GetInstance;
 import org.joinmastodon.android.api.session.AccountSessionManager;
+import org.joinmastodon.android.fragments.onboarding.InstanceCatalogFragment;
 import org.joinmastodon.android.fragments.onboarding.InstanceRulesFragment;
 import org.joinmastodon.android.model.Instance;
 import org.joinmastodon.android.model.catalog.CatalogInstance;
@@ -72,6 +73,7 @@ public class SplashFragment extends AppKitFragment {
         contentView = (SizeListenerFrameLayout) inflater.inflate(R.layout.fragment_splash, container, false);
         contentView.findViewById(R.id.btn_get_started).setOnClickListener(this::onButtonClick);
         contentView.findViewById(R.id.btn_log_in).setOnClickListener(this::onButtonClick);
+        contentView.findViewById(R.id.btn_get_started_nuwasoial).setOnClickListener(this::onNext);
 
         artContainer = contentView.findViewById(R.id.art_container);
         blueFill = contentView.findViewById(R.id.blue_fill);
@@ -99,12 +101,13 @@ public class SplashFragment extends AppKitFragment {
         return contentView;
     }
 
+
     private void onButtonClick(View v) {
 
         Bundle extras = new Bundle();
         extras.putBoolean("signup", v.getId() == R.id.btn_get_started);
-        onNext();
-//		Nav.go(getActivity(), InstanceCatalogFragment.class, extras);
+//        onNext();
+		Nav.go(getActivity(), InstanceCatalogFragment.class, extras);
     }
 
     private void updateArtSize(int w, int h) {
@@ -149,7 +152,7 @@ public class SplashFragment extends AppKitFragment {
         motionEffect.deactivate();
     }
 
-    private void onNext() {
+    private void onNext(View v) {
         Instance instance = instancesCache.get("nuwasocial.com");
         if (instance != null) {
             proceedWithAuthOrSignup(instance);

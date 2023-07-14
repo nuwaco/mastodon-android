@@ -87,6 +87,15 @@
 		android:padding="16dp"
 		android:clipToPadding="false"
 		android:orientation="vertical">
+
+		<Button
+			android:id="@+id/btn_get_started_nuwasoial"
+			style="@style/Widget.Mastodon.Button.Large.Primary_LightOnDark"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="13dp"
+			android:text="@string/nuwasocial" />
+
 		<Button
 			android:id="@+id/btn_get_started"
 			android:layout_width="match_parent"
